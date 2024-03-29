@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+#video{
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.taskbar {
+    height: 50px;
+    display: flex;
+    width: 100vw;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #f3f3f3;
+    z-index: 100;
+    
+}
+.taskbar img{
+    cursor: pointer;
+}
+
+.startMenu{
+    
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: -450px;
+    left: 35vw;
+}
+
+.startMenu img{
+    height: 75vh;
+    width: 35vw;
+    /* bottom: 50px; */
+    border-radius: 10px;
+}
+
+.searchMenu{
+    
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    bottom: -500px;
+    left: 32vw;
+}
+
+.searchMenu img{
+    height: 80vh;
+    width: 40vw;
+    /* bottom: 50px; */
+    border-radius: 10px;
+}
+
+.edgeMenu{
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.edgeMenu img{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.right-bar {
+    display: flex;
+    width: 100vw;
+    gap: 5px;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    
+}
+
+.icons{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px 20px;
+}
+.icons img{
+
+    height: 5vh;
+    width: 3vw;
+}
